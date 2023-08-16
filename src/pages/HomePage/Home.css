@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Satisfy&display=swap');
+
+
+.tagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tagline h1 {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    color: #695316;
+    word-spacing: 5px;
+    font-weight: 600;
+    text-align: center;
+}
