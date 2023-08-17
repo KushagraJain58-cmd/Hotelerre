@@ -102,7 +102,10 @@
 }
 
 .atTop .nav-links {
-  color: #3a4b5d;
+  /* color: #3a4b5d;
+  color: #fff; */
+  /* color: #9DA5AE; */
+  color: #ffffffd7;
 }
 
 .atTop:hover .nav-links {
@@ -132,7 +135,7 @@
   border: 1px solid #000;
 }
 .atTop .nav-item .active {
-  color: #3a4b5d;
+  color: #fff;
   border: 1px solid #000;
 }
 .atTop:hover .nav-item .active {

@@ -13,6 +13,9 @@
     transition: opacity .35s ease-in-out;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond&family=Lobster&family=Montserrat&display=swap');
+
 .slideshow-cont {
     border-radius: 10px;
     bottom: 40px;
@@ -31,14 +34,38 @@
     display: none !important;
 }
 
+/* Adding the black translucent overlay */
+.slide-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); 
+     /* background-color: rgba(184, 127, 58, 0.3);  */
+    z-index: 0;
+}
+
+.slide-card:hover::before{
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: 0.5s ease-in-out;
+}
+
+.slide-card p{
+   font-family: 'EB Garamond', serif;
+    font-size: 50px;
+}
+
+
 @media screen and (min-width: 700px)
 {
     .slide-cont {
-    height: 65vh;
+    height: 90vh;
     width: 100%;    
     }
     .slide-card {
-    height: 65vh;
+    height: 90vh;
     width: 100%;
     }
     

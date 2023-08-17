@@ -15,7 +15,7 @@ const Home = () => {
 				</div> */}
 				<div class="about-content">
 					<div class="about-tagline">
-						<h1>One Stop solution to all your hotel needs</h1>
+						<h1>One Stop solution to all your Hotel needs</h1>
 					</div>
 					<div className="about-card-cont">
 						<div className="about-card">

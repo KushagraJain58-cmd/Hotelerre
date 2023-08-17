@@ -11,7 +11,7 @@ section {
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/Home/about_back.png);
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png);
    background-attachment: fixed;
    background-size: cover;
 }
@@ -58,7 +58,7 @@ height: 100%;
 
 .about-tagline h1 {
     font-size: 60px;
-    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Satisfy', cursive;
     letter-spacing: 2px;
     color: #fff;

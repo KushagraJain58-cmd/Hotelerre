@@ -1,42 +1,46 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import './Slideshow.css';
-import demo from '../../assets/images/Home/demo.jpg';
-import demo2 from '../../assets/images/Home/demo2.jpg';
-import demo3 from '../../assets/images/Home/demo3.jpeg';
+import cover1 from '../../assets/images/Home/cover1.jpg';
+import cover2 from '../../assets/images/Home/cover2.jpg';
+import cover3 from '../../assets/images/Home/cover3.jpg';
+import cover4 from '../../assets/images/Home/cover4.jpg';
+import cover5 from '../../assets/images/Home/cover5.jpg';
 
 const Slideshow = () => {
 	return (
 		<div className="slide-cont">
-			<Carousel showStatus={false} stopOnHover useKeyboardArrows infiniteLoop interval={5000}>
+			<Carousel showStatus={false} useKeyboardArrows infiniteLoop interval={4000} autoPlay>
 				<div className="slide-card">
-					<img src={demo} alt="Slide 1" />
+					<img src={cover1} alt="Slide 1" />
+					<p className="slideshow-cont">
+						We take pride in providing exceptional hotel services that are truly among the finest in the
+						industry.
+					</p>
+				</div>
+				<div className="slide-card">
+					<img src={cover2} alt="Slide 2" />
+					<p className="slideshow-cont">
+						An all-encompassing solution to elevate the beauty of your dining experience.
+					</p>
+				</div>
+				<div className="slide-card">
+					<img src={cover3} alt="Slide 3" />
+					<p className="slideshow-cont">
+						A centralized and comprehensive solution to meet all your housekeeping supply needs.
+					</p>
+				</div>
+				<div className="slide-card">
+					<img src={cover4} alt="Slide 3" />
 					<p className="slideshow-cont">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
 					</p>
 				</div>
 				<div className="slide-card">
-					<img src={demo2} alt="Slide 2" />
+					<img src={cover5} alt="Slide 3" />
 					<p className="slideshow-cont">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
-					</p>
-				</div>
-				<div className="slide-card">
-					<img src={demo3} alt="Slide 3" />
-					<p className="slideshow-cont">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
-					</p>
-				</div>
-				<div className="slide-card">
-					<img src={demo} alt="Slide 3" />
-					<p className="slideshow-cont">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
-					</p>
-				</div>
-				<div className="slide-card">
-					<img src={demo3} alt="Slide 3" />
-					<p className="slideshow-cont">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
+						A comprehensive remedy to fulfill all your kitchen supplies requirements at a single
+						destination.
 					</p>
 				</div>
 			</Carousel>
