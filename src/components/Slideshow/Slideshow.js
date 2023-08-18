@@ -10,7 +10,7 @@ import cover5 from '../../assets/images/Home/cover5.jpg';
 const Slideshow = () => {
 	return (
 		<div className="slide-cont">
-			<Carousel showStatus={false} useKeyboardArrows infiniteLoop interval={4000} autoPlay>
+			<Carousel showStatus={false} useKeyboardArrows infiniteLoop interval={4000} autoPlay autoFocus>
 				<div className="slide-card">
 					<img src={cover1} alt="Slide 1" />
 					<p className="slideshow-cont">

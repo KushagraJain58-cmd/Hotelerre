@@ -65,7 +65,7 @@ height: 100%;
      /* background-color: rgba(105, 83, 22, 0.9); */
      background-color: rgba(58, 75, 93, 1);
     padding: 1rem;
-    border-radius: 4rem;
+    border-radius: 25px;
     word-spacing: 5px;
     font-weight: 500;
     text-align: center;
@@ -85,7 +85,7 @@ height: 100%;
     padding: 1.5rem;
     color: #fff;
     margin-right: 2rem;
-     border-radius: 4rem;
+     border-radius: 20px;
 }
 
 .about-content .left-cont {
