@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Satisfy&display=swap');
 
 :root {
-  --secondaryText: rgba(179, 149, 66, 0.9);
+  --secondaryText: #dddde2;
   --primaryBackgroundClr:#e7e6e6;
-  --primaryText:#000;
+  --primaryText:rgba(255, 216, 107, 0.9);
   --secondaryBackgroundClr:rgba(58, 75, 93, 0.9);
   --white:#fff;
   --button:#c1272d;
@@ -45,7 +45,7 @@ section {
 }
 .section-head {
   /* background-color:var(--secondaryBackgroundClr); */
-  color: var(--secondaryText);
+  color: var(--primaryText);
   font-weight: 700;
   /* padding: 0.8rem; */
   border-radius: 20px;
@@ -147,5 +147,8 @@ height: 100%;
     justify-content: center;
     align-items: center;
    
+}
+.about-card p {
+    color: var(--secondaryText);
 }
 

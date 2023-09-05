@@ -4,29 +4,36 @@ const product_data = [
 	{
 		name: 'product',
 		image: prod1,
-		heading: 'Furniture',
-		paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing`,
+		heading: 'Excellent service',
+		paragraph: ` Excellence in service is our utmost priority. We are dedicated to providing top-notch solutions to meet the needs of our valued hotel clients, ensuring their satisfaction and success`,
 		catalog: ''
 	},
 	{
 		name: 'product',
 		image: prod1,
-		heading: 'Furniture',
-		paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing`,
+		heading: 'Premium quality',
+		paragraph: `Premium quality is our hallmark. We are committed to delivering top-tier products and services, ensuring that our clients receive nothing but the best for their establishments.`,
 		catalog: ''
 	},
 	{
 		name: 'product',
 		image: prod1,
-		heading: 'Furniture',
-		paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing`,
+		heading: 'Professional Team',
+		paragraph: `We are driven by a dedicated and highly professional team. With their expertise, we ensure our clients receive top-notch service and support, tailored to meet their unique needs and expectations.`,
 		catalog: ''
 	},
 	{
 		name: 'product',
 		image: prod1,
-		heading: 'Furniture',
-		paragraph: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing`,
+		heading: 'Competitive Pricing',
+		paragraph: `We take pride in offering competitive prices. We are committed to providing cost-effective solutions without compromising on quality, making us the ideal choice for hoteliers seeking value and excellence.`,
+		catalog: ''
+	},
+	{
+		name: 'product',
+		image: prod1,
+		heading: 'On Time delivery',
+		paragraph: `Punctuality is our promise. We prioritize on-time delivery to ensure our clients receive their orders exactly when they need them. Count on us for reliable and timely service, keeping your hotel operations running smoothly.`,
 		catalog: ''
 	}
 ];

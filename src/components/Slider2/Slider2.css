@@ -74,7 +74,7 @@
   /* font-size: 20px; */
   /* color: var(--primaryText); */
  text-align: center;
- color: #fff;
+ color: var(--secondaryText);
 }
 
 
@@ -109,7 +109,7 @@
 }
 
 .carousel__btn-arrow {
-  border: solid var(--secondaryText);
+  border: solid var(--primaryText);
   /* background-color: #c1272d; */
   border-width: 0 0.2rem 0.2rem 0;
   height: 1.5rem;
