@@ -56,8 +56,8 @@ section {
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png); */
-   background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png);
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png);
+   /* background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png); */
    background-attachment: fixed;
    background-size: cover;
 }
