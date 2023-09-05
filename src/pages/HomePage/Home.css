@@ -1,17 +1,63 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Satisfy&display=swap');
 
+:root {
+  --secondaryText: rgba(179, 149, 66, 0.9);
+  --primaryBackgroundClr:#e7e6e6;
+  --primaryText:#000;
+  --secondaryBackgroundClr:rgba(58, 75, 93, 0.9);
+  --white:#fff;
+  --button:#c1272d;
+}
+
 section {
     margin-bottom: 2rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    /* padding-left: 6rem;
+    padding-right: 6rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-container {
+    background-color: var(--secondaryBackgroundClr);
+    background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/images/Home/cuttlery.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   /* animation: backgroundMovement 3s linear infinite alternate; */
+   animation: zoomBackground 3s linear infinite alternate;
+}
+/* @keyframes backgroundMovement {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 30px 30px; 
+    }
+} */
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 110%; /* Adjust the value as needed for the desired zoom level */
+    }
+}
+.section-head {
+  /* background-color:var(--secondaryBackgroundClr); */
+  color: var(--secondaryText);
+  font-weight: 700;
+  /* padding: 0.8rem; */
+  border-radius: 20px;
+  /* font-size: 35px; */
 }
 .about {
    position: relative;
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png);
+   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png); */
+   background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png);
    background-attachment: fixed;
    background-size: cover;
 }
