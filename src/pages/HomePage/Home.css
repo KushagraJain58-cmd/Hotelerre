@@ -12,8 +12,8 @@
 
 section {
     margin-bottom: 2rem;
-    /* padding-left: 6rem;
-    padding-right: 6rem; */
+    padding-left: 4rem;
+    padding-right: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +33,9 @@ section {
 }
 .product-section h1{
     color: var(--secondaryBackgroundClr);
+}
+.client-section h1 {
+    color: var(--primaryText);
 }
 /* @keyframes backgroundMovement {
     0% {

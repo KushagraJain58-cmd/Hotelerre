@@ -1,71 +1,105 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
 import './Slider.css';
+// import './Slider2.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Slider = ({ title, slides }) => {
-	const [ slideNumber, setSlideNumber ] = useState(0);
-	const sliderRef = useRef(null);
-	const nextArrow = useRef(null);
+const Slider3 = (props) => {
+	const { data } = props;
+	const [ areImagesLoaded, setAreImagesLoaded ] = useState(true);
+	console.log(data);
+	useEffect(
+		() => {
+			const imagePromises = data.map((src) => {
+				return new Promise((resolve) => {
+					const img = new Image();
+					img.src = src;
+					img.onload = resolve;
+				});
+			});
 
-	const navigationHandle = (direction) => {
-		let newSlideNumber;
-		const totalNoofSlides = sliderRef.current.children.length - 1;
-		direction === 'left'
-			? (newSlideNumber = slideNumber === 0 ? totalNoofSlides : slideNumber - 1)
-			: (newSlideNumber = slideNumber === totalNoofSlides ? 0 : slideNumber + 1);
-		setSlideNumber(newSlideNumber);
+			Promise.all(imagePromises).then(() => {
+				setAreImagesLoaded(true);
+			});
+		},
+		[ data ]
+	);
 
-		// adding/removing active class from slides
-		Array.from(sliderRef.current.children).forEach((slide) => slide.classList.remove('active'));
-		sliderRef.current.children[newSlideNumber].classList.add('active');
-
-		// setting current slide's bg image as body background image
-		document.body.style.backgroundImage = `url(${slides[newSlideNumber].source})`;
-		if (direction === 'left') {
-			sliderRef.current.children[newSlideNumber].classList.add('left-slide');
-			console.log('left slide');
-		}
+	const CustomPrevArrow = (props) => {
+		const { onClick } = props;
+		return (
+			<button className="carousel__btn carousel__btn--prev" onClick={onClick}>
+				<i className="carousel__btn-arrow carousel__btn-arrow--left" />
+			</button>
+		);
 	};
 
-	// autoplay
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		nextArrow.current.click();
-	// 	}, 10000);
-	// 	return () => {
-	// 		clearInterval(interval);
-	// 	};
-	// }, []);
+	const CustomNextArrow = (props) => {
+		const { onClick } = props;
+		return (
+			<button className="carousel__btn carousel__btn--next" onClick={onClick}>
+				<i className="carousel__btn-arrow carousel__btn-arrow--right" />
+			</button>
+		);
+	};
 
-	// checking if no slides available
-	if (slides.length <= 0) {
-		return 'No slides available..';
-	}
+	const renderSlides = () =>
+		data.map((slide, index) => (
+			<div className="slide-container" key={index}>
+				<div class="second-cont">
+					<div className="client-slide-img">
+						<img src={slide.image} alt={`${index + 1}`} onLoad={() => setAreImagesLoaded(true)} />
+					</div>
+					<div className="client-content">
+						{/* <h2>{slide.heading}</h2> */}
+						<h2>{slide.heading}</h2>
+					</div>
+				</div>
+			</div>
+		));
+
+	const settings = {
+		dots: false,
+		customPaging: (i) => <button className="custom-dot" />,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		prevArrow: <CustomPrevArrow />,
+		nextArrow: <CustomNextArrow />,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 570,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	};
 
 	return (
-		<div className="sliderWrapper">
-			{title && <h3 className="sliderTitle">{title}</h3>}
-			<button className="prevArrow" onClick={() => navigationHandle('left')}>
-				«
-			</button>
-			<div className="slider" ref={sliderRef}>
-				{slides.map((slide, index) => (
-					<div className={`slide${index === 0 ? ' active' : ''}`}>
-						{slide.source && <img src={slide.source} alt={slide.title} loading="lazy" draggable={false} />}
-						{slide.title && <h3>{slide.title}</h3>}
-					</div>
-				))}
-			</div>
-			<button className="nextArrow" onClick={() => navigationHandle('right')} ref={nextArrow}>
-				»
-			</button>
-			<div className="sliderPagination">
-				{slideNumber + 1} / {slides.length}
-			</div>
+		<div className="client-carousel-container">
+			{!areImagesLoaded && <h1>Loading Images</h1>}
+			{areImagesLoaded && <Slider {...settings}>{renderSlides()}</Slider>}
 		</div>
 	);
 };
 
-export default Slider;
-// ReactDOM.createRoot(document.body).render(
-//   <Slider title="React Slider" slides={images} />
-// );
+export default Slider3;

@@ -2,10 +2,11 @@ import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import './Home.css';
-// import Slider from '../../components/Slider/Slider';
+import Slider from '../../components/Slider/Slider';
 import Slider2 from '../../components/Slider2/Slider2';
 import ProductSlider from '../../components/ProductSlider/ProductSlider';
-import { product_data } from '../../components/data';
+import { client_data, why_data } from '../../components/data';
+
 // import about_back from '../../assets/images/Home/about_back.png';
 
 // const images = [
@@ -88,7 +89,11 @@ const Home = () => {
 			</section>
 			<section className="section-container">
 				<h1 class="section-head">Why Hotelerre</h1>
-				<Slider2 data={product_data} />
+				<Slider2 data={why_data} />
+			</section>
+			<section className="section-container client-section">
+				<h1 class="section-head">Our Prestigious Clients</h1>
+				<Slider data={client_data} />
 			</section>
 		</Fragment>
 	);
