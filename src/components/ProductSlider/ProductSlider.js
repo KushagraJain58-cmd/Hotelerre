@@ -25,7 +25,7 @@ const ProductSlider = () => {
 			// const leftSlideTransform = activeSlideIndex === 0 ? '0' : `${(activeSlideIndex - 1) * sliderHeight}px`;
 			// slideLeft.style.transform = `translateY(${leftSlideTransform})`;
 		},
-		[ activeSlideIndex ]
+		[ activeSlideIndex, slidesLength ]
 	);
 
 	const changeSlide = (direction) => {
