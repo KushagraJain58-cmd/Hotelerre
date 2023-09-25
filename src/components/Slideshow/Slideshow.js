@@ -20,15 +20,11 @@ const Slideshow = () => {
 				</div>
 				<div className="slide-card">
 					<img src={cover2} alt="Slide 2" />
-					<p className="slideshow-cont">
-						An all-encompassing solution to elevate the beauty of your dining experience.
-					</p>
+					<p className="slideshow-cont">One stop solution to elevate the beauty of your dining experience.</p>
 				</div>
 				<div className="slide-card">
 					<img src={cover3} alt="Slide 3" />
-					<p className="slideshow-cont">
-						A centralized and comprehensive solution to meet all your housekeeping supply needs.
-					</p>
+					<p className="slideshow-cont">One stop solution to all your Housekeeping supplie</p>
 				</div>
 				<div className="slide-card">
 					<img src={cover4} alt="Slide 3" />
@@ -38,10 +34,7 @@ const Slideshow = () => {
 				</div>
 				<div className="slide-card">
 					<img src={cover5} alt="Slide 3" />
-					<p className="slideshow-cont">
-						A comprehensive remedy to fulfill all your kitchen supplies requirements at a single
-						destination.
-					</p>
+					<p className="slideshow-cont">One Stop solution to all your Kitchen supplies</p>
 				</div>
 			</Carousel>
 		</div>
