@@ -4,6 +4,7 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 import './Home.css';
 // import Slider from '../../components/Slider/Slider';
 import Slider2 from '../../components/Slider2/Slider2';
+import ProductSlider from '../../components/ProductSlider/ProductSlider';
 import { product_data } from '../../components/data';
 // import about_back from '../../assets/images/Home/about_back.png';
 
@@ -81,7 +82,10 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			{/* <Slider title="React Slider" slides={images} /> */}
+			<section className="product-section">
+				<h1 class="section-head">Products</h1>
+				<ProductSlider />
+			</section>
 			<section className="section-container">
 				<h1 class="section-head">Why Hotelerre</h1>
 				<Slider2 data={product_data} />
