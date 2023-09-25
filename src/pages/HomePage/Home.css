@@ -19,9 +19,12 @@ section {
     justify-content: center;
     align-items: center;
 }
+.section-head {
+    color: var(--secondaryBackgroundClr);
+}
 .section-container {
-    background-color: var(--secondaryBackgroundClr);
-    background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/images/Home/cuttlery.jpg);
+    /* background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/images/Home/cuttlery.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../../assets/images/Home/cuttlery.jpg);
    background-attachment: fixed;
    background-size: cover;
    /* animation: backgroundMovement 3s linear infinite alternate; */
