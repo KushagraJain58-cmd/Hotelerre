@@ -31,6 +31,9 @@ section {
     padding-left: 5rem;
     padding-right: 5rem;
 }
+.product-section h1{
+    color: var(--secondaryBackgroundClr);
+}
 /* @keyframes backgroundMovement {
     0% {
         background-position: 0 0;
