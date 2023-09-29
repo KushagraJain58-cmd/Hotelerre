@@ -14,7 +14,7 @@ const About = () => {
 				title="Who we are?"
 				subTitle="About the Company About the Company About the Company"
 			/>
-			<section>
+			<section className="section-main section-top">
 				<div className="intro">
 					<div class="intro-img">
 						<img className="image-inside1" src={img} alt="" />

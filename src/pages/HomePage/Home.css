@@ -24,6 +24,9 @@ section {
     align-items: center;
     row-gap: 1rem;
 }
+.section-top {
+     margin-top: 2rem !important;
+}
 .section-head {
     color: var(--secondaryBackgroundClr);
     font-weight: 700;
