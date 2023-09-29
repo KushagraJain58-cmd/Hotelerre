@@ -1,11 +1,4 @@
-/* :root {
-  --secondaryBackgroundClr: #e7e6e6;
-  --primaryBackgroundClr:#e7e6e6;
-  --primaryText:#000;
-  --secondaryText:#182268;
-  --white:#fff;
-  --button:#c1272d;
-} */
+
 .carousel-container {
   max-width: 85%;
   /* margin-bottom: 5rem; */
@@ -27,6 +20,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(255, 236, 255, 0.101);
+    border: 2px solid rgba(255, 255, 255, 0.125);
+    border-radius: 20px;
+    cursor: text;
+    padding: 25px; */
 }
 
 .slide-img {
@@ -112,9 +112,9 @@
   border: solid var(--primaryText);
   /* background-color: #c1272d; */
   border-width: 0 0.2rem 0.2rem 0;
-  height: 1.5rem;
+  height: 0.8rem;
   padding: 3px;
-  width: 1.5rem;
+  width: 0.8rem;
   z-index: 10;
 }
 .carousel__btn-arrow--left {
