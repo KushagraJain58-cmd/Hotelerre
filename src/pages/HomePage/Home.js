@@ -23,11 +23,11 @@ const Home = () => {
 							<div className="about-card">
 								<h1>WHO ARE WE?</h1>
 								<p>
-									Hotelerre Offers A Comprehensive Solution For Your Restaurant Needs, Eliminating The
-									Need To Visit Multiple Vendors For Quotes And Materials. With Our Pan-India Presence
-									And Competitive Pricing, You Can Find Everything You Require Under One Roof. Say
-									Goodbye To The Hassle Of Running To Various Vendors And Let Us Simplify Your
-									Restaurant Procurement Process.
+									At Hotelerre, we are passionate about delivering top-notch hospitality solutions.
+									Our journey in the industry spans over 9+ years, during which we have honed our
+									expertise, built strong relationships, and perfected the art of providing
+									high-quality products to hotels and restaurants.We are more than a supplier; we are
+									your dedicated partner in hospitality success.
 								</p>
 							</div>
 						</div>
