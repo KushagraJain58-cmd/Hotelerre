@@ -74,9 +74,15 @@
    padding: 10rem;
 }
 .what-content-2 {
-width: 60%;
-    background-color: #000;
+width: 50%;
+border-radius: 25px;
+    /* background-color: #000; */
     /* background-image: url(../../assets/images/Home/texture.jpg); */
+     backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(255, 236, 255, 0.101);
+    border: 2px solid rgba(255, 255, 255, 0.125);
+    padding: 2rem;
 }
 .what-content-2 h1 {
     color: #fff;
