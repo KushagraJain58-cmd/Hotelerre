@@ -68,15 +68,15 @@
 
 .what-we-do
 {
-    
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../../assets/images/About/about-back.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../../assets/images/About/about_back.jpg);
    background-attachment: scroll;
-   background-size: contain;
+   background-size: cover;
    padding: 10rem;
 }
 .what-content-2 {
 width: 60%;
     background-color: #000;
+    /* background-image: url(../../assets/images/Home/texture.jpg); */
 }
 .what-content-2 h1 {
     color: #fff;
