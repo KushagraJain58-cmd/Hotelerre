@@ -2,8 +2,9 @@ import React, { Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Cover from '../../components/Cover/Cover';
 import './About.css';
-import about_cover from '../../assets/images/About/about_cover.png';
-import img from '../../assets/images/Home/demo4.jpg';
+import about_cover from '../../assets/images/About/about_cover.jpg';
+import img from '../../assets/images/About/about.jpg';
+// import img2 from '../../assets/images/About/about2.jpeg';
 import Footer from '../../components/Footer/Footer';
 
 const About = () => {
@@ -13,31 +14,29 @@ const About = () => {
 			<Cover
 				coverImageSrc={about_cover}
 				title="Who we are?"
-				subTitle="About the Company About the Company About the Company"
+				subTitle="A dedicated team of professionals who have made it our mission to elevate the guest experience in the hospitality industry by providing top-quality hotel supplies."
 			/>
 			<section className="section-main section-top section-about">
 				<div className="intro">
 					<div class="intro-img">
 						<img className="image-inside1" src={img} alt="" />
-						<img className="image-inside2" src={img} alt="" />
+						{/* <img className="image-inside2" src={img2} alt="" /> */}
 					</div>
 					<div className="intro-content">
-						<h1>About Us</h1>
+						<h1>Meet Tanvi Bhageria- Founder of Hotelerre</h1>
 						<p className="f-intro-para">
-							A brand backed by a heritage of nearly half a century, FnS assures excellence and
-							credibility in every aspect of our products and services. With the core competence of
-							manufacturing a wide range of household and gastronomy goods with the finest stainless
-							steel, FnS unveils the most distinctive products with superlative designs. Our strength lies
-							in a highly dexterous and dedicated team endowed with the skills to forge steel to their
-							will, including creating dazzling shapes and unique chemical compositions in steel, thus
-							helping manifest products of great form, function and comfort.
+							In the competitive and ever-evolving world of hotel supply, it takes a visionary leader to
+							make a lasting impact. Our journey is led by Tanvi Bhageria, a seasoned professional with
+							over 9 years of experience in the hotel supply business. Her career path has been marked by
+							dedication and a deep understanding of the industry, which eventually led her to identify a
+							critical gap in the services provided to purchase managers in the hotel sector. With a
+							resolve to address these challenges, Tanvi took the bold step to establish her own business.
+							Her unwavering dedication to excellence has inspired our team to provide an unmatched level
+							of service that transcends traditional supplier-purchaser relationships.
 							<br />
 							<br />
-							Riding on the overwhelming acceptance and success globally , FnS is today proud to be able
-							to serve the needs and requirements of people, brands and businesses across continents. The
-							extensive collections across categories with noteworthy advantages like the use of FDA
-							standard stainless steel, 24k real gold plating, lifetime guarantees, matching servings and
-							customizable designs are sure to meet the requisites of even the most discerning buyers.
+							In conclusion, she is not just a founder but a visionary who has harnessed her extensive
+							industry knowledge to redefine the standards of hotel supply.
 						</p>
 					</div>
 				</div>
@@ -47,20 +46,19 @@ const About = () => {
 					<div className="intro-content what-content-2">
 						<h1>What we do</h1>
 						<p className="f-intro-para">
-							A brand backed by a heritage of nearly half a century, FnS assures excellence and
-							credibility in every aspect of our products and services. With the core competence of
-							manufacturing a wide range of household and gastronomy goods with the finest stainless
-							steel, FnS unveils the most distinctive products with superlative designs. Our strength lies
-							in a highly dexterous and dedicated team endowed with the skills to forge steel to their
-							will, including creating dazzling shapes and unique chemical compositions in steel, thus
-							helping manifest products of great form, function and comfort.
+							At Hotelerre, we take pride in offering a comprehensive range of high-quality hotel and
+							restaurant supplies. Our commitment to excellence and our deep understanding of the
+							hospitality industry enable us to provide you with the products and solutions you need to
+							create memorable guest experiences. Partner with Hotelerre to enhance your hotel or
+							restaurant's offerings, delight your guests, and achieve new levels of success in the
+							hospitality industry. We are your trusted source for all things hospitality supply.
 							<br />
 							<br />
-							Riding on the overwhelming acceptance and success globally , FnS is today proud to be able
-							to serve the needs and requirements of people, brands and businesses across continents. The
-							extensive collections across categories with noteworthy advantages like the use of FDA
-							standard stainless steel, 24k real gold plating, lifetime guarantees, matching servings and
-							customizable designs are sure to meet the requisites of even the most discerning buyers.
+							Our commitment is to make your life easier, so you can focus on what you do best -
+							delivering exceptional experiences to your guests. We understand the unique and demanding
+							requirements of the hospitality industry. Whether you're managing a boutique hotel, a
+							sprawling resort, or anything in between, we're here to simplify your procurement process
+							and elevate your experience.
 						</p>
 					</div>
 					{/* <div class="intro-img">
@@ -73,13 +71,13 @@ const About = () => {
 				<div className="mv-card">
 					{/* <img src={mission} alt="" /> */}
 
-					<div class="mv-heading">
+					<div class="mv-heading heading-mission">
 						<h1>MISSION</h1>
 					</div>
 					<div className="mv-content">
 						<p className="para">
-							Our mission is to offer customized procurement and supply chain solutions that add value for
-							clients.
+							We understand the unique challenges and demands of this industry, and we are dedicated to
+							offering the finest supplies that meet your exact needs.
 						</p>
 						<h2>Our Priorities</h2>
 						<div className="priority">
@@ -87,26 +85,32 @@ const About = () => {
 							<p>Transparency</p>
 							<p>Communication</p>
 						</div>
-						<p>To deliver cost-effective and timely services backed by ethical business practices</p>
+						<p>
+							Our mission is simple but profound: to be the supplier of choice for businesses in the
+							hospitality sector.
+						</p>
 					</div>
 				</div>
 				<div className="mv-card">
 					{/* <img src={mission} alt="" /> */}
-					<div class="mv-heading">
+					<div class="mv-heading heading-vision">
 						<h1>VISION</h1>
 					</div>
 					<div className="mv-content">
 						<p className="para">
-							Our mission is to offer customized procurement and supply chain solutions that add value for
-							clients.
+							We aspire to lead the industry into a future where quality, sustainability, and innovation
+							converge to create unparalleled guest experiences.
 						</p>
 						<h2>Our Priorities</h2>
 						<div className="priority">
-							<p>Trust</p>
-							<p>Transparency</p>
-							<p>Communication</p>
+							<p>Innovation</p>
+							<p>Adaptation</p>
+							<p>Values</p>
 						</div>
-						<p>To deliver cost-effective and timely services backed by ethical business practices</p>
+						<p>
+							Our vision is clear: to be a transformative force in the hotel and restaurant supplies
+							industry, shaping the future of hospitality.
+						</p>
 					</div>
 				</div>
 			</section>

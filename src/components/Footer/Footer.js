@@ -36,14 +36,14 @@ const Footer = () => {
 						</ul>
 					</div>
 					<div className="box foot-head-office">
-						<p>HEAD OFFICE - DELHI (INDIA)</p>
+						<p>Head Office - Delhi (India)</p>
 
 						<p>
-							<b>Sapphire Sourcings</b>
-							127, Arihant Nagar, Punjabi Bagh West New Delhi 110026
+							<b>NRI Complex</b>
+							30, NRI complex, Gk-4, Delhi -110019
 						</p>
 
-						<p>+91 98 10 00 46 63 | ravi@sapphiresourcings.com</p>
+						<p>+91 8010836633 | hotelerre@gmail.com</p>
 					</div>
 					<div className="copyright">
 						<p>Copyright ©2022 All rights reserved | by Hotelerre</p>

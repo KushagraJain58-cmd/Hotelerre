@@ -4,7 +4,7 @@ import './Slideshow.css';
 import cover1 from '../../assets/images/Home/cover1.jpg';
 import cover2 from '../../assets/images/Home/cover2.jpg';
 import cover3 from '../../assets/images/Home/cover3.jpg';
-import cover4 from '../../assets/images/Home/cover4.jpg';
+import cover4 from '../../assets/images/About/about_back.jpg';
 import cover5 from '../../assets/images/Home/cover5.jpg';
 
 const Slideshow = () => {
@@ -28,9 +28,7 @@ const Slideshow = () => {
 				</div>
 				<div className="slide-card">
 					<img src={cover4} alt="Slide 3" />
-					<p className="slideshow-cont">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laudantium?
-					</p>
+					<p className="slideshow-cont">One stop solution to all your Glasswares</p>
 				</div>
 				<div className="slide-card">
 					<img src={cover5} alt="Slide 3" />
