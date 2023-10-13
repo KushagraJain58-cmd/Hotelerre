@@ -129,14 +129,14 @@ color: #fff;
     align-items: center;
     border-radius: 25px 0 0 0;
 }
-.heading-mission{
+/* .heading-mission{
  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/About/mission2.jpg);
 }
 .heading-vision
 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/About/mission3.jpg);
     background-position: bottom;
-}
+} */
 .mv-card h1 {
    color: #fff;
    font-weight: 700;

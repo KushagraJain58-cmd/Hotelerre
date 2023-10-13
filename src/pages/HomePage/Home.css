@@ -33,7 +33,7 @@ section {
   border-radius: 20px;
 }
 .section-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../../assets/images/Home/cuttlery.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../../assets/images/Home/cuttlery.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(../../assets/images/About/mv_back.jpg);
    background-attachment: fixed;
    background-size: cover;
@@ -72,7 +72,7 @@ section {
    display: flex;
    justify-content: center;
    align-items: flex-start;
-   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../../assets/images/Home/about_back.png);
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../../assets/images/About/mv_back.jpg);
    /* background: linear-gradient(rgba(58, 75, 93, 0.9), rgba(0, 0, 0, 0.5)), url(../../assets/images/Home/about_back.png); */
    background-attachment: fixed;
    background-size: cover;
