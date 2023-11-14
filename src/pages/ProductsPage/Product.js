@@ -31,27 +31,52 @@ import {
 } from '../../components/data';
 
 const Products = () => {
+	const scrollToKitchen = () => {
+		const kitchenSection = document.getElementById('kitchen_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+	const scrollToCooking = () => {
+		const kitchenSection = document.getElementById('cooking_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+	const scrollToFnb = () => {
+		const kitchenSection = document.getElementById('fnb_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+	const scrollToHousekeeping = () => {
+		const kitchenSection = document.getElementById('housekeeping_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+	const scrollToLineware = () => {
+		const kitchenSection = document.getElementById('lineware_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+	const scrollToPaper = () => {
+		const kitchenSection = document.getElementById('paper_sec');
+		kitchenSection.scrollIntoView({ behavior: 'smooth' });
+	};
+
 	return (
 		<Fragment>
 			<Navbar />
 			<Cover coverImageSrc={product_cover} title="Products" subTitle="We want you to know all about us!" />
 			<section className="product_sec">
 				<div className="product_div">
-					<div className="product_card card1">
+					<div className="product_card card1" onClick={scrollToKitchen}>
 						<img src={kitchen} alt="" />
 						<div className="heading-cover heading1">
 							<h1 className="textile_head">Kitchen Equipments</h1>
 						</div>
 					</div>
 					<img className="leaf" src={leaf} alt="" />
-					<div className="product_card card2">
+					<div className="product_card card2" onClick={scrollToCooking}>
 						<img src={cooking} alt="" />
 						<div className="heading-cover heading2">
 							<h1 className="furniture_head">Cooking Equipments</h1>
 						</div>
 					</div>
 					<img className="leaf" src={leaf} alt="" />
-					<div className="product_card card3">
+					<div className="product_card card3" onClick={scrollToFnb}>
 						<img src={fnb} alt="" />
 						<div className="heading-cover heading3">
 							<h1 className="furniture_head">F&B Products</h1>
@@ -64,21 +89,21 @@ const Products = () => {
 					<img className="leaf2" src={leaf3} alt="" />
 				</div>
 				<div className="product_div">
-					<div className="product_card card3">
+					<div className="product_card card3" onClick={scrollToHousekeeping}>
 						<img src={housekeeping} alt="" />
 						<div className="heading-cover heading3">
 							<h1 className="textile_head">Housekeeping</h1>
 						</div>
 					</div>
 					<img className="leaf3" src={leaf4} alt="" />
-					<div className="product_card card2">
+					<div className="product_card card2" onClick={scrollToLineware}>
 						<img src={lineware} alt="" />
 						<div className="heading-cover heading2">
 							<h1 className="furniture_head">Lineware</h1>
 						</div>
 					</div>
 					<img className="leaf3" src={leaf4} alt="" />
-					<div className="product_card card1">
+					<div className="product_card card1" onClick={scrollToPaper}>
 						<img src={paper} alt="" />
 						<div className="heading-cover heading1">
 							<h1 className="furniture_head">Paper Napkin</h1>
@@ -86,7 +111,7 @@ const Products = () => {
 					</div>
 				</div>
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="kitchen_sec">
 				<div className="prod_container main-img-1">
 					<img src={kitchen_img} alt="" />
 					<div className="prod_content">
@@ -105,7 +130,7 @@ const Products = () => {
 				</div>
 				<ProductCarousel images={product_img} />
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="cooking_sec">
 				<div className="prod_container prod_reverse main-img-2">
 					<img src={cooking_img} alt="" />
 					<div className="prod_content content_reverse">
@@ -126,7 +151,7 @@ const Products = () => {
 				</div>
 				<ProductCarousel images={product_img2} />
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="fnb_sec">
 				<div className="prod_container main-img-1">
 					<img src={fnb_img} alt="" />
 					<div className="prod_content">
@@ -146,7 +171,7 @@ const Products = () => {
 				</div>
 				<ProductCarousel images={product_img3} />
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="housekeeping_sec">
 				<div className="prod_container prod_reverse main-img-2">
 					<img src={housekeeping_img} alt="" />
 					<div className="prod_content content_reverse">
@@ -166,7 +191,7 @@ const Products = () => {
 				</div>
 				<ProductCarousel images={product_img4} />
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="lineware_sec">
 				<div className="prod_container main-img-1">
 					<img src={lineware_img} alt="" />
 					<div className="prod_content">
@@ -186,7 +211,7 @@ const Products = () => {
 				</div>
 				<ProductCarousel images={product_img5} />
 			</section>
-			<section className="product_sec sec_back">
+			<section className="product_sec sec_back" id="paper_sec">
 				<div className="prod_container prod_reverse main-img-2">
 					<img src={paper_img} alt="" />
 					<div className="prod_content content_reverse">
