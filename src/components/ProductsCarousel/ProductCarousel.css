@@ -1,0 +1,51 @@
+.carousel {
+  height: 100%;
+}
+
+.carousel .card-container {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .card {
+  height: 100%;
+  width: 33.3%;
+  transition: all 1s;
+  position: absolute;
+  opacity: 0.8;
+  transform: scale(0.8);
+  z-index: 998;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel .card img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: 5px solid #FFF;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.carousel .rects {
+  /* height: 20px; */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .rects .rect {
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.carousel .rects .active {
+  background-color: #000;
+}
